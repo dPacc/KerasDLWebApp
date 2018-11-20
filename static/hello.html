@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello Greeting App</title>
+    <style>
+      * {
+      font-size:30px;
+    }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="name-input"/>
+    <button id="name-button">Submit</button>
+    <p id='greeting'></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $("#name-button").click(function(event){
+        let message = {
+          name: $("#name-input").val()
+        }
+        $.post("http://127.0.0.1:5000/hello", JSON.stringify(message), function(response) {
+          $("#greeting").text(response.greeting);
+          console.log(response);
+        });
+      });
+    </script>
+  </body>
+</html>
