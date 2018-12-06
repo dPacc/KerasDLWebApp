@@ -39,3 +39,5 @@ $ python -m flask run
 ```
 
 The web app should be running on your localhost!
+
+Open: `http://localhost:5000/static/predict.html`
