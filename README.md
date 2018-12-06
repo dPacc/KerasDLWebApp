@@ -3,7 +3,7 @@
 A simple web-app for Cat-Dog prediction using a pre-trained VGG16 model, the training was done using Keras API with Tensorflow
 Backend.
 
-### Link to download the VGG16 mode: -
+### Link to download the VGG16 model: -
  
 https://drive.google.com/file/d/0Bz7KyqmuGsilT0J5dmRCM0ROVHc/view 
 
@@ -30,7 +30,7 @@ you can use your custom data to retrain the model. In case the amount of data yo
 
 If you are running a virtual environment for Tensorflow, activate it and `cd` into the directory of the project.
 
-To run the code, type ``
+To run the code, type:
 
 ```
 $ export FLASK_APP=predict_app.py
@@ -38,4 +38,4 @@ $ export FLASK_APP=predict_app.py
 $ python -m flask run
 ```
 
-The web app should be running on you localhost!
+The web app should be running on your localhost!
